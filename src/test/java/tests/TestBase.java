@@ -65,6 +65,7 @@ public class TestBase extends AbstractTestNGCucumberTests
 
 		{
 
+			
 			DesiredCapabilities caps = new DesiredCapabilities();
 			caps.setJavascriptEnabled(true);
 			caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
@@ -74,6 +75,18 @@ public class TestBase extends AbstractTestNGCucumberTests
 			driver = new PhantomJSDriver(caps);
 		}
 
+
+		else if (browserName.equalsIgnoreCase("chrome-headless"))
+		{
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir")+"/drivers/chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			options.addArguments("--window-size=1920,1080");
+			driver = new ChromeDriver(options);
+
+
+		}
 
 		else if(browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver.exe");
