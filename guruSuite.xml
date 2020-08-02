@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="guru Suite">
+	<parameter name="browser" value="chrome" />
+	<test name="guru Test">
+		<classes>
+			
+			<class name="ghuru.ghuru2" />
+			<class name="ghuru.ghuru3" />
+			
+		</classes>
+	</test>
+</suite> 

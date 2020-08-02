@@ -3,16 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.TestRunner">
+      <class name="ghuru2">
         <methods>
+          <include name="closeurl"/>
+          <include name="TestingGuruSite"/>
           <include name="startDriver"/>
-          <include name="stopDriver"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="screenshotOnFailure"/>
-          <include name="tearDownClass"/>
-          <include name="setUpClass"/>
         </methods>
-      </class> <!-- runner.TestRunner -->
+      </class> <!-- ghuru2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

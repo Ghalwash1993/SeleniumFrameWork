@@ -39,10 +39,17 @@
 		</pluginManagement>
 	</build>
 	<dependencies>
+
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.0.0-alpha-6</version>
+		</dependency>
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.13.3</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
