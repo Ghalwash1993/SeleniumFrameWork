@@ -4,13 +4,13 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="guru Test(failed)">
     <classes>
-      <class name="ghuru.ghuru3">
+      <class name="ghuru.ghuru4">
         <methods>
           <include name="startDriver"/>
           <include name="closeurl"/>
-          <include name="Purchasetest"/>
+          <include name="PrintOrderPdf"/>
         </methods>
-      </class> <!-- ghuru.ghuru3 -->
+      </class> <!-- ghuru.ghuru4 -->
     </classes>
   </test> <!-- guru Test(failed) -->
 </suite> <!-- Failed suite [guru Suite] -->

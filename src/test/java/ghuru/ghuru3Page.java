@@ -19,7 +19,6 @@ public class ghuru3Page {
 
 	@FindBy(xpath="//*[@id=\"wishlist-view-form\"]/div/div/button[2]/span/span")
 	WebElement AddtoCartBtn;
-
 	@FindBy(xpath="//*[@id=\"top\"]/body/div/div/div[2]/div/div/div/div[1]/ul/li/button/span/span")
 	WebElement ProccedToCHeckoutBtn;
 

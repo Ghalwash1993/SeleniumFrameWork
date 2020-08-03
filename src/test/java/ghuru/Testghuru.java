@@ -24,7 +24,7 @@ public class Testghuru extends utils{
 	@AfterTest
 	public void closeurl()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 	
 	
